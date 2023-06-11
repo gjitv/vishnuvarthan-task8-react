@@ -84,11 +84,13 @@
     font-size: 3rem;
     color: rgb(11, 11, 49);
 }
+
 .sub>p{
     font-size: 1.1rem;
+    padding: 30px 0px;
 }
 .sub>button{
-    padding: 20px 35px;
+    padding: 10px 35px;
     background-color:  rgb(11, 11, 49);
     color: white;
     font-size: 1rem;
@@ -96,4 +98,7 @@
     border-radius: 10px;
     border: none; 
     
+}
+.carouselSub{
+    background-color: azure;
 }

@@ -5,12 +5,14 @@ import Register from './Pages/Register/Register';
 import Home from './Pages/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Services from './Pages/Services/Services';
 import Contact from './Pages/Contact/Contact';
+import Footer from './Components/Navbar/Footer/Footer';
 
 function App() {
-  const[currentForm, setCurrentForm]= useState("login");
+  const[currentForm, setCurrentForm]= useState("login"); 
   const toggleForm=(formName)=>{
     setCurrentForm(formName);
   }
@@ -26,6 +28,7 @@ function App() {
             <Route path='/services' element={<Services/>}/>
             <Route path='/contact' element={<Contact/>}/>   
         </Routes>
+        <Footer/>
       </div>
     </Router>
     
