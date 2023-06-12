@@ -102,3 +102,18 @@
 .carouselSub{
     background-color: azure;
 }
+@media only screen and (max-width:575px){
+    *{
+        text-align: center;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .carousel{
+        width: auto;
+        height: 60vh;
+    }
+    .sub>h1{
+        font-size: 2rem;
+    }
+}
